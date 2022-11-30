@@ -9,7 +9,7 @@ export const Header = styled.header`
 export const Nav = styled.nav`
   width: 100%;
   height: 100%;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -88,7 +88,7 @@ export const InfoSide = styled.div`
 
   img {
     height: 45px;
-    width: 40px;
+    width: 45px;
     border-radius: 100%;
     margin-top: 7px;
   }
