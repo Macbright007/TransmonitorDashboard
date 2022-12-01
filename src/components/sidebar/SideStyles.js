@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const SideMenu = styled.aside`
-  border: 2px solid black;
+  // border: 2px solid black;
   //   border: none;
   height: 100%;
   background: #fff;
