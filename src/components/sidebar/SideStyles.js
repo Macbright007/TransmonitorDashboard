@@ -7,7 +7,7 @@ export const SideMenu = styled.aside`
   background: #fff;
 `;
 export const Menu = styled.div`
-  //   border: 2px solid blue;
+    // border: 2px solid blue;
   margin: 10px;
   height: 55vh;
   text-align: left;

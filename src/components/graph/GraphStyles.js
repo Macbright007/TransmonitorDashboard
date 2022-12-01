@@ -50,27 +50,28 @@ export const Content = styled.div`
 // style for second graph
 
 export const GraphContainer = styled.div`
-  // border: 2px solid black;
   width: 100%;
   max-width: 1150px;
   margin: 25px auto;
-  background: #fff;
-  border: 1px solid #eef8fd;
   border-radius: 2px;
   display: flex;
 `;
 
 export const LeftContainerSide = styled.div`
-  // border: 2px solid blue;
+  position: relative;
+  box-sizing: border-box;
   width: 62%;
+  background: #fff;
 
   img {
     width: 100%;
     margin-top: 5rem;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
   }
 `;
 export const TopSide = styled.div`
-  // border: 2px solid red;
   display: flex;
   justify-content: space-between;
 
@@ -86,7 +87,6 @@ export const TopSide = styled.div`
 `;
 
 export const InnerTopSide = styled.div`
-  // border: 2px solid blue;
   width: 40%;
   margin: 10px;
   display: flex;
@@ -110,20 +110,69 @@ export const InnerTopSide = styled.div`
     border: 1px solid #ced0da;
     border-radius: 4px;
     margin: 5px 7px;
+    color: #cccfd4;
   }
 `;
 
 export const BottomSide = styled.div`
-  // border: 2px solid black;
   display: flex;
   justify-content: space-around;
+
+  .box {
+    mix-blend-mode: normal;
+    border: 1px solid #cfe8fb;
+    padding: 0px 20px 20px;
+    height: 250px;
+    border-top: 0;
+    border-left: 0;
+    border-bottom: 0;
+  }
 
   h3 {
     font-family: "Segoe UI";
     font-size: 14px;
     line-height: 19px;
     display: flex;
-    align-items: center;
+    align-items: left;
     color: #000;
+  }
+`;
+
+export const RightContainerSide = styled.div`
+  width: 38%;
+  text-align: left;
+  background: #fff;
+`;
+
+export const InnerRightSide = styled.div`
+  border: 2px solid #e5e5e5;
+  padding: 10px;
+
+  h3 {
+    font-family: "Segoe UI";
+    font-size: 14px;
+    line-height: 16px;
+    color: #262626;
+  }
+
+  .container {
+    background-color: #fdc203;
+    width: 90%;
+    border-radius: 3px;
+    height: 4px;
+  }
+
+  .barCompleted {
+    border-radius: 3px;
+    background: #27ae60;
+    width: 80%;
+    height: 4px;
+  }
+
+  p {
+    font-family: "Segoe UI";
+    font-size: 14px;
+    line-height: 16px;
+    color: #262626;
   }
 `;

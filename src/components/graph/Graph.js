@@ -1,19 +1,20 @@
 import React from "react";
 import {
-    BottomSide,
+  BottomSide,
   Content,
   GraphContainer,
   GraphStats,
   GraphWrapper,
+  InnerRightSide,
   InnerTopSide,
   LeftContainerSide,
+  RightContainerSide,
   StatBox,
   TopSide,
 } from "./GraphStyles";
 import graph from "../../images/graph.svg";
 import gradient from "../../images/Gradient.svg";
-
-
+import ProgressBar from "@ramonak/react-progress-bar";
 
 const Graph = () => {
   return (
@@ -61,50 +62,81 @@ const Graph = () => {
               <div className="date">1 Jan - 1 Jun</div>
 
               <div className="btn__btn">
-                <button>8</button>
-                <button>9</button>
+                <button>&lt;</button>
+                <button>&gt;</button>
               </div>
             </InnerTopSide>
           </TopSide>
 
           <BottomSide>
-            <h3>Jan</h3>
-            <h3>Feb</h3>
-            <h3>Mar</h3>
-            <h3>Apr</h3>
-            <h3>May</h3>
-            <h3>Jun</h3>
+            <div className="box">
+              <h3>Jan</h3>
+            </div>
+            <div className="box">
+              <h3>Feb</h3>
+            </div>
+            <div className="box">
+              <h3>Mar</h3>
+            </div>
+            <div className="box">
+              <h3>Apr</h3>
+            </div>
+            <div className="box">
+              <h3>May</h3>
+            </div>
+            <div className="box">
+              <h3>Jun</h3>
+            </div>
           </BottomSide>
 
           <img src={gradient} alt="stat" />
         </LeftContainerSide>
 
-        <div>
-          <div>
+        <RightContainerSide>
+          <InnerRightSide>
             <h3>Orders</h3>
+
+            <ProgressBar
+              completed={80}
+              barContainerClassName="container"
+              completedClassName="barCompleted"
+              isLabelVisible={false}
+            />
             <p>
-              Pending Orders: <span>20</span>
+              Pending Orders:{" "}
+              <span style={{ color: "#fdc203", fontWeight: "700" }}>20</span>
             </p>
             <p>
-              Reconciled: <span>80</span>
+              Reconciled:{" "}
+              <span style={{ color: "#27ae60", fontWeight: "700" }}>80</span>
             </p>
             <p>
-              Total Orders: <span>100</span>
+              Total Orders:{" "}
+              <span style={{ color: "#1860EC", fontWeight: "700" }}>100</span>
             </p>
-          </div>
-          <div>
+          </InnerRightSide>
+          <InnerRightSide>
             <h3>Payments</h3>
+            <ProgressBar
+              completed={80}
+              barContainerClassName="container"
+              completedClassName="barCompleted"
+              isLabelVisible={false}
+            />
             <p>
-              Un-reconciled Payments: <span>20</span>
+              Un-reconciled Payments:{" "}
+              <span style={{ color: "#fdc203", fontWeight: "700" }}>20</span>
             </p>
             <p>
-              Reconciled Payments: <span>80</span>
+              Reconciled Payments:{" "}
+              <span style={{ color: "#27ae60", fontWeight: "700" }}>80</span>
             </p>
             <p>
-              Total Payments: <span>100</span>
+              Total Payments:{" "}
+              <span style={{ color: "#1860EC", fontWeight: "700" }}>100</span>
             </p>
-          </div>
-        </div>
+          </InnerRightSide>
+        </RightContainerSide>
       </GraphContainer>
     </GraphWrapper>
   );
