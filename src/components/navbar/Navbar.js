@@ -10,46 +10,71 @@ import {
   SearchBar,
 } from "./NavStyle";
 import pic from "../../images/pic.svg";
-import { FiBell } from "react-icons/fi";
+import { BsArrowLeftRight } from "react-icons/bs";
 import { CiSearch } from "react-icons/ci";
+import { FiBell } from "react-icons/fi";
 
-const Navbar = () => {
+const Navbar = ({ToggleHamburger, ToggleSideButton, hideMobileMenu, hideSideMenu}) => {
   return (
     <Header>
       <Nav>
+        {hideSideMenu ? (
+          <BsArrowLeftRight
+            className="back__arrow"
+            onClick={ToggleSideButton}
+          />
+        ) : (
+          <BsArrowLeftRight
+            className="back__arrow"
+            onClick={ToggleSideButton}
+          />
+        )}
         <LeftNav>
           <h1>TransMonitor</h1>
-          <SearchBar>
-            <CiSearch
-              style={{
-                color: "#0E1D25",
-                fontSize: "30px",
-                marginTop: "10px",
-                marginRight: "20px",
-              }}
-            />
-            <input type="text" placeholder="Search..." />
-          </SearchBar>
         </LeftNav>
 
-        <RightNav>
-          <a>Support</a>
-          <a>FAQ</a>
+        {hideMobileMenu ? (
+          <label for="toggle" onClick={ToggleHamburger}>
+            &#9776;
+          </label>
+        ) : (
+          <label for="toggle" onClick={ToggleHamburger}>
+            &#9747;
+          </label>
+        )}
+        <input type="checkbox" id="toggle" />
 
-          <Notification>
-            <FiBell style={{ fontSize: "23px", margin: "20px 50px" }} />
-            <span>8</span>
-          </Notification>
+        {hideMobileMenu ? null : (
+          <RightNav>
+            <SearchBar>
+              <CiSearch
+                style={{
+                  color: "#0E1D25",
+                  fontSize: "30px",
+                  marginTop: "10px",
+                  marginRight: "20px",
+                }}
+              />
+              <input type="text" placeholder="Search..." />
+            </SearchBar>
+            <a>Support</a>
+            <a>FAQ</a>
 
-          <InfoSide>
-            <InnerInfo>
-              <h3>Hello</h3>
-              <h3>Oluwaleke Ojo</h3>
-            </InnerInfo>
+            <Notification>
+              <FiBell className="notice" />
+              <span>8</span>
+            </Notification>
 
-            <img src={pic} alt="person" />
-          </InfoSide>
-        </RightNav>
+            <InfoSide>
+              <InnerInfo>
+                <h3>Hello</h3>
+                <h3>Oluwaleke Ojo</h3>
+              </InnerInfo>
+
+              <img src={pic} alt="person" />
+            </InfoSide>
+          </RightNav>
+        )}
       </Nav>
     </Header>
   );

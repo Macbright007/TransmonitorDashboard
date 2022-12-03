@@ -6,7 +6,7 @@ export const GraphWrapper = styled.section`
 export const GraphStats = styled.div`
   //   border: 2px solid green;
   width: 100%;
-  max-width: 1150px;
+  max-width: 1250px;
   margin: 25px auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -51,7 +51,7 @@ export const Content = styled.div`
 
 export const GraphContainer = styled.div`
   width: 100%;
-  max-width: 1150px;
+  max-width: 1250px;
   margin: 25px auto;
   border-radius: 2px;
   display: flex;

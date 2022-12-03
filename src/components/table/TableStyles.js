@@ -6,7 +6,7 @@ export const TableContainer = styled.div`
 export const TableWrapper = styled.div`
   // border: 2px solid blue;
   width: 100%;
-  max-width: 1150px;
+  max-width: 1250px;
   margin: auto;
   padding: 0px;
 
@@ -98,7 +98,7 @@ export const Table = styled.table`
   // border: 2px solid red;
   border-collapse: collapse;
   width: 100%;
-  max-width: 1150px;
+  max-width: 1250px;
   margin: 25px auto;
 `;
 export const TableRow = styled.tr`

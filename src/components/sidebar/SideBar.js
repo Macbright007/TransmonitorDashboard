@@ -18,10 +18,11 @@ import orderOne from "../../images/orderOne.svg";
 import orderTwo from "../../images/orderTwo.svg";
 import profile from "../../images/profile.svg";
 
-const SideBar = () => {
+const SideBar = ({hideSideMenu}) => {
   return (
     <SideMenu>
-      <Menu>
+      {!hideSideMenu ? null : (
+        <Menu>
         <ButtonCont>
           <button>GENERATE INVOICE</button>
         </ButtonCont>
@@ -83,6 +84,7 @@ const SideBar = () => {
           </MenuItem>
         </SideFooter>
       </Menu>
+      )}
     </SideMenu>
   );
 };

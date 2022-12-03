@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 export const DisplayContainer = styled.div`
-  background: #e5e5e5;
+    display: none;
+    background: #e5e5e5;
     height: calc(100vh - 60px);
     overflow: scroll;
 
