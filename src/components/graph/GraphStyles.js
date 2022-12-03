@@ -4,7 +4,7 @@ export const GraphWrapper = styled.section`
   //   border: 2px solid black;
 `;
 export const GraphStats = styled.div`
-  //   border: 2px solid green;
+    // border: 2px solid green;
   width: 100%;
   max-width: 1250px;
   margin: 25px auto;
@@ -33,7 +33,9 @@ export const StatBox = styled.div`
   @media (max-width: 950px) {
     // border: 2px solid blue;
     height: 150px;
-    width: 300px;
+    width: 100%;
+    max-width: 370px;
+    margin: auto;
 
     img {
       width: 40%;
@@ -83,8 +85,8 @@ export const GraphContainer = styled.div`
   display: flex;
 
   @media (max-width: 950px) {
-    // border: 2px solid blue;
-    width: 90%;
+    border: 2px solid blue;
+    width: 95%;
     display: flex;
     flex-direction: column;
   }
