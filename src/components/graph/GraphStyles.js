@@ -11,6 +11,10 @@ export const GraphStats = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
+
+  @media (max-width: 950px) {
+    grid-template-columns: 1fr;
+  }
 `;
 export const StatBox = styled.div`
   display: flex;
@@ -24,6 +28,17 @@ export const StatBox = styled.div`
   img {
     margin: 3px 0px;
     width: 28%;
+  }
+
+  @media (max-width: 950px) {
+    // border: 2px solid blue;
+    height: 150px;
+    width: 300px;
+
+    img {
+      width: 40%;
+      margin-right: 15px;
+    }
   }
 `;
 export const Content = styled.div`
@@ -45,19 +60,38 @@ export const Content = styled.div`
     color: #262626;
     margin-top: -10px;
   }
+
+  @media (max-width: 950px) {
+    margin-top: 30px;
+
+    p,
+    h1 {
+      font-size: 18px;
+      justify-content: center;
+    }
+  }
 `;
 
 // style for second graph
 
 export const GraphContainer = styled.div`
+  // display: none;
   width: 100%;
   max-width: 1250px;
   margin: 25px auto;
   border-radius: 2px;
   display: flex;
+
+  @media (max-width: 950px) {
+    // border: 2px solid blue;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+  }
 `;
 
 export const LeftContainerSide = styled.div`
+  // display: none;
   position: relative;
   box-sizing: border-box;
   width: 62%;
@@ -69,6 +103,12 @@ export const LeftContainerSide = styled.div`
     position: absolute;
     left: 0px;
     bottom: 0px;
+  }
+
+  @media (max-width: 950px) {
+    width: 100%;
+    overflow-x: scroll;
+    // overflow-y: hidden;
   }
 `;
 export const TopSide = styled.div`
@@ -83,6 +123,11 @@ export const TopSide = styled.div`
     align-items: flex-end;
     color: #4f4f4f;
     margin-left: 30px;
+  }
+
+  @media (max-width: 950px) {
+    width: 100%;
+    flex-direction: column;
   }
 `;
 
@@ -112,6 +157,19 @@ export const InnerTopSide = styled.div`
     margin: 5px 7px;
     color: #cccfd4;
   }
+
+  @media (max-width: 950px) {
+    // border:2px solid blue;
+    width: 100%;
+
+    .date {
+      font-size: 16px;
+    }
+    .btn__btn button {
+      margin: 7px 9px;
+      padding: 3px 10px;
+    }
+  }
 `;
 
 export const BottomSide = styled.div`
@@ -136,12 +194,30 @@ export const BottomSide = styled.div`
     align-items: left;
     color: #000;
   }
+
+  // @media (max-width: 950px) {
+  //   border: 2px solid blue;
+  //   flex-direction: column;
+
+  //   .box {
+  //     border-top: 0;
+  //     border-left: 0;
+  //     border-right: 0;
+  //     border: 1px solid #cfe8fb;
+  //   }
+  // }
 `;
 
 export const RightContainerSide = styled.div`
+  // display: none;
   width: 38%;
   text-align: left;
   background: #fff;
+
+  @media (max-width: 950px) {
+    // border: 2px solid blue;
+    width: 100%;
+  }
 `;
 
 export const InnerRightSide = styled.div`
@@ -174,5 +250,20 @@ export const InnerRightSide = styled.div`
     font-size: 14px;
     line-height: 16px;
     color: #262626;
+  }
+
+  @media (max-width: 950px) {
+    padding: 20px;
+
+    h3{
+      font-size: 20px;
+    }
+    p{
+      font-size: 18px;
+    }
+
+    .container,.barCompleted {
+      height: 8px;
+    }
   }
 `;

@@ -104,15 +104,15 @@ const Graph = () => {
             />
             <p>
               Pending Orders:{" "}
-              <span style={{ color: "#fdc203", fontWeight: "700" }}>20</span>
+              <span style={{ color: "#fdc203", fontWeight: "700" }}> 20</span>
             </p>
             <p>
               Reconciled:{" "}
-              <span style={{ color: "#27ae60", fontWeight: "700" }}>80</span>
+              <span style={{ color: "#27ae60", fontWeight: "700" }}> 80</span>
             </p>
             <p>
               Total Orders:{" "}
-              <span style={{ color: "#1860EC", fontWeight: "700" }}>100</span>
+              <span style={{ color: "#1860EC", fontWeight: "700" }}> 100</span>
             </p>
           </InnerRightSide>
           <InnerRightSide>
@@ -124,15 +124,15 @@ const Graph = () => {
               isLabelVisible={false}
             />
             <p>
-              Un-reconciled Payments:{" "}
+              Un-reconciled Payments:
               <span style={{ color: "#fdc203", fontWeight: "700" }}>20</span>
             </p>
             <p>
-              Reconciled Payments:{" "}
+              Reconciled Payments:
               <span style={{ color: "#27ae60", fontWeight: "700" }}>80</span>
             </p>
             <p>
-              Total Payments:{" "}
+              Total Payments:
               <span style={{ color: "#1860EC", fontWeight: "700" }}>100</span>
             </p>
           </InnerRightSide>

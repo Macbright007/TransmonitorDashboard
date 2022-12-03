@@ -109,7 +109,8 @@ export const RightNav = styled.div`
     top: 0;
     right: -70px;
     margin: 70px;
-    background: rgba(255, 255, 255, 0.2);
+    // background: rgba(255, 255, 255, 0.2);
+    background-color: #e7e9eb;
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     border: 2px solid #0f0033;

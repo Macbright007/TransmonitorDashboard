@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const TableContainer = styled.div`
   // border: 2px solid red;
+  display: none;
 `;
 export const TableWrapper = styled.div`
   // border: 2px solid blue;
