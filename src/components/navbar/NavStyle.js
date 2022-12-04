@@ -30,6 +30,9 @@ export const Nav = styled.nav`
   }
 
   @media (max-width: 950px) {
+    // border: 2px solid red;
+    padding: 10px;
+
     label {
       display: block;
       cursor: pointer;
@@ -74,7 +77,7 @@ export const SearchBar = styled.div`
 
   input[type="text"] {
     width: 100%;
-    padding: 5px 4px;
+    padding: 7px 4px;
     border: none;
     margin: 9px 0px;
     font-size: 16px;
@@ -102,12 +105,12 @@ export const RightNav = styled.div`
 
   @media (max-width: 950px) {
     flex-direction: column;
-    width: 100%;
-    height: 85vh;
+    width: 95%;
+    height: 75vh;
     padding: 20px;
     position: absolute;
     top: 0;
-    right: -70px;
+    right: -60px;
     margin: 70px;
     // background: rgba(255, 255, 255, 0.2);
     background-color: #e7e9eb;
@@ -125,10 +128,11 @@ export const RightNav = styled.div`
     a {
       display: block;
       text-align: center;
-      padding: 20px;
+      padding: 15px;
       font-size: 20px;
       background: #1875F0;
       color: white;
+      margin-top: -5rem;
       // border-bottom: 2px solid white;
     }
   }
@@ -163,6 +167,7 @@ export const Notification = styled.div`
   @media (max-width: 950px) {
     .notice {
       font-size: 40px;
+      margin-top: -5rem;
     }
 
     span {
@@ -171,7 +176,7 @@ export const Notification = styled.div`
       font-size: 15px;
       justify-content: center;
       right: 43%;
-      top: 15%;
+      top: -50px;
     }
   }
 `;
@@ -188,10 +193,12 @@ export const InfoSide = styled.div`
 
   @media (max-width: 950px) {
     justify-content: center;
+    
 
     img{
-      height: 90px;
-      width: 90px;
+      height: 70px;
+      width: 70px;
+      margin-top: -5rem;
     }
   }
 `;
@@ -218,8 +225,10 @@ export const InnerInfo = styled.div`
   }
 
   @media (max-width: 950px) {
+    margin-top: -6rem;
+
     h3{
-      font-size: 25px;
+      font-size: 23px;
       margin-top: 10px;
     }
   }

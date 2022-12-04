@@ -21,29 +21,15 @@ const Table = () => {
         <TableTop>
           <LeftInfo>
             <p>Showing</p>
-            <span
-              style={{ color: "#1875F0", fontSize: "14px", marginTop: "13px" }}
-            >
-              20
-              </span>
-              <MdKeyboardArrowDown
-                style={{ marginTop: "1rem", color: "#1875F0" }}
-              />
-            
+            <span className="spp">20</span>
+            <MdKeyboardArrowDown className="dd__arrow" />
+
             <p>out if 500 Payments</p>
           </LeftInfo>
 
           <MiddleInfo>
             <input type="text" placeholder="Search payments" />
-            <CiSearch
-              style={{
-                color: "#0E1D25",
-                fontSize: "20px",
-                position: "absolute",
-                top: "12px",
-                left: "0px",
-              }}
-            />
+            <CiSearch className="search" />
           </MiddleInfo>
 
           <RightInfo>
@@ -51,9 +37,7 @@ const Table = () => {
 
             <InnerRightInfo>
               <p>All </p>
-              <MdKeyboardArrowDown
-                style={{ marginTop: "1rem", color: "#1875F0" }}
-              />
+              <MdKeyboardArrowDown className="dd__arrow" />
             </InnerRightInfo>
           </RightInfo>
         </TableTop>

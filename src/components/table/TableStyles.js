@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const TableContainer = styled.div`
   // border: 2px solid red;
-  display: none;
+  // display: none;
 `;
 export const TableWrapper = styled.div`
   // border: 2px solid blue;
@@ -18,12 +18,25 @@ export const TableWrapper = styled.div`
     align-items: flex-end;
     color: #262626;
   }
+
+  @media (max-width: 950px) {
+    width: 95%;
+    padding: 0px 20px;
+
+    p {
+      font-weight: 600;
+    }
+  }
 `;
 
 export const TableTop = styled.div`
     // border: 2px solid black;
     display flex;
     justify-content: space-between;
+
+    @media (max-width: 950px) {
+      flex-direction: column;
+    }
 `;
 export const LeftInfo = styled.div`
   // border: 2px solid green;
@@ -38,6 +51,36 @@ export const LeftInfo = styled.div`
     display: flex;
     align-items: flex-end;
     color: #262626;
+  }
+
+  .spp {
+    color: #1875f0;
+    font-size: 14px;
+    margin-top: 13px;
+  }
+
+  .dd__arrow {
+    margin-top: 1rem;
+    color: #1875f0;
+  }
+
+  @media (max-width: 950px) {
+    width: 100%;
+
+    p {
+      font-size: 18px;
+    }
+
+    .spp {
+      font-size: 18px;
+      margin-top: 15px;
+      margin-left: 5px;
+    }
+
+    .dd__arrow {
+      font-size: 1.5rem;
+      margin-right: 7px;
+    }
   }
 `;
 
@@ -57,6 +100,32 @@ export const MiddleInfo = styled.div`
     font-size: 12px;
     background: transparent;
   }
+
+  .search{
+    color: #0E1D25;
+    fontSize: 20px;
+    position: absolute;
+    top: 12px;
+    left: 0px;
+  }
+
+  @media (max-width: 950px) {
+    width: 100%;
+    margin-top: 20px;
+
+    input[type="text"]{
+      padding: 10px 30px;
+      font-size: 15px;
+      width: 90%;
+      margin-left: 20px;
+    }
+
+    .search{
+      left: 20px;
+      font-size: 25px;
+      top: 5px;
+    }
+  }
 `;
 export const RightInfo = styled.div`
   // border: 2px solid black;
@@ -72,6 +141,15 @@ export const RightInfo = styled.div`
     display: flex;
     align-items: flex-end;
     color: #000;
+  }
+
+  @media (max-width: 950px) {
+    width: 100%;
+    margin-top: 3rem;
+
+    p{
+      font-size: 20px;
+    }
   }
 `;
 
@@ -91,16 +169,47 @@ export const InnerRightInfo = styled.div`
     align-items: flex-end;
     color: #414042;
   }
+
+  .dd__arrow {
+    margin-top: 1rem;
+    color: #1875f0;
+  }
+
+  @media (max-width: 950px){
+    p{
+      font-size: 20px;
+    }
+
+    .dd__arrow {
+      font-size: 1.5rem;
+      margin-right: 7px;
+    }
+  }
 `;
 
 // styling for table details
 
 export const Table = styled.table`
-  // border: 2px solid red;
+  border: 2px solid red;
   border-collapse: collapse;
   width: 100%;
   max-width: 1250px;
   margin: 25px auto;
+  // display: none;
+
+  // @media (max-width: 950px) {
+    // width: 200px;
+    // overflow-x: auto;
+    // overflow-y: hidden;
+    // -ms-overflow-style: -ms-autohiding-scrollbar;
+  // }
+
+  @media (max-width: 950px) {
+    width: 100%;
+    max-width: 200px;
+    
+    overflow-x: scroll;
+  }
 `;
 export const TableRow = styled.tr`
   // border: 2px solid blue;
@@ -114,6 +223,14 @@ export const TableRow = styled.tr`
     color: #7f8fa4;
     font-weight: 500;
   }
+
+  // @media (max-width: 950px) {
+  //   // width: 200px;
+  //   // overflow-x: auto;
+  //   // overflow-y: hidden;
+  //   // -ms-overflow-style: -ms-autohiding-scrollbar;
+  //   border: 2px solid red;
+  // }
 `;
 
 export const TableBodyRow = styled.tr`
@@ -155,6 +272,16 @@ export const TableBodyRow = styled.tr`
     width: 120px;
     padding: 3px 7px 5px;
   }
+
+  // @media (max-width: 950px) {
+  //   width: 100%;
+  //   max-wdth: 300px;
+
+  //   overflow-x: auto;
+  //   overflow-y: hidden;
+  //   -ms-overflow-style: -ms-autohiding-scrollbar;
+  //   border: 2px solid blue;
+  // }
 `;
 
 export const TableBottom = styled.div`
@@ -178,7 +305,7 @@ export const TableBottom = styled.div`
     display: flex;
 
     div {
-      border: 1px solid #CED0DA;
+      border: 1px solid #ced0da;
       font-family: "Segoe UI";
       font-size: 13px;
       color: #000;

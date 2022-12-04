@@ -29,6 +29,7 @@ export const Menu = styled.div`
     width: 90%;
     height: 100%;
     // border: 2px solid red;
+    z-index: 1;
     overflow-y: scroll;
     overflow-x: hidden;
   }

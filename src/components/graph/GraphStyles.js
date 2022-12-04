@@ -34,7 +34,7 @@ export const StatBox = styled.div`
     // border: 2px solid blue;
     height: 150px;
     width: 100%;
-    max-width: 370px;
+    max-width: 350px;
     margin: auto;
 
     img {
@@ -85,7 +85,7 @@ export const GraphContainer = styled.div`
   display: flex;
 
   @media (max-width: 950px) {
-    border: 2px solid blue;
+    // border: 2px solid blue;
     width: 95%;
     display: flex;
     flex-direction: column;
@@ -110,7 +110,6 @@ export const LeftContainerSide = styled.div`
   @media (max-width: 950px) {
     width: 100%;
     overflow-x: scroll;
-    // overflow-y: hidden;
   }
 `;
 export const TopSide = styled.div`
@@ -138,6 +137,7 @@ export const InnerTopSide = styled.div`
   margin: 10px;
   display: flex;
   justify-content: space-between;
+  padding: 15px;
 
   .date {
     border: 1px solid #dde0e3;
@@ -200,13 +200,6 @@ export const BottomSide = styled.div`
   // @media (max-width: 950px) {
   //   border: 2px solid blue;
   //   flex-direction: column;
-
-  //   .box {
-  //     border-top: 0;
-  //     border-left: 0;
-  //     border-right: 0;
-  //     border: 1px solid #cfe8fb;
-  //   }
   // }
 `;
 
