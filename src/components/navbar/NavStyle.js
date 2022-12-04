@@ -117,7 +117,7 @@ export const RightNav = styled.div`
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     border: 2px solid #0f0033;
-    // z-index: 1;
+    z-index: 1;
 
     a:hover {
       background-color: #083570;

@@ -43,7 +43,9 @@ const Table = () => {
         </TableTop>
       </TableWrapper>
 
-      <TableDetail />
+      <div className="tt">
+        <TableDetail />
+      </div>
     </TableContainer>
   );
 };

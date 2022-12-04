@@ -1,19 +1,15 @@
 import styled from "styled-components";
 
 export const SideMenu = styled.aside`
-  // border: 2px solid black;
-  //   border: none;
   display: block;
   height: 100%;
   background: #fff;
 
   @media (max-width: 950px) {
-    // display: block;
     width: 100%;
   }
 `;
 export const Menu = styled.div`
-  // border: 2px solid blue;
   position: relative;
   margin: 10px;
   height: 55vh;
@@ -28,7 +24,6 @@ export const Menu = styled.div`
     border: 2px solid #e7e9eb;
     width: 90%;
     height: 100%;
-    // border: 2px solid red;
     z-index: 1;
     overflow-y: scroll;
     overflow-x: hidden;
